@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    
+    <h1>wlecome to javascript </h1>
+    
+        First Name: <br>
+        <input type="text"  size="15" value="" id="tbfname"><br>
+        Middle Name: <br>
+        <input type="text"  size="15" value="" id="tbmname"><br>
+        Last Name: <br>
+        <input type="text"  size="15" value="" id="tblname"><br>
+        Phone: <br>
+        <input type="tell"  size="15" value="" id="tbphone"> <br>
+        <input type="submit" value="Register" onclick="Register()">
+        
+    
+    <br>
+    <br>
+    <table border="1px">
+    <tr>
+        <td>First Name</td>
+        <td id="fname"> </td>
+    </tr>
+    <tr>
+        <td>Middle Name</td>
+        <td id="mname"></td>
+    </tr>
+    <tr>
+        <td>Last Name</td>
+        <td id="lname"></td>
+    </tr>
+    <tr>
+        <td>Phone</td>
+        <td id="phone"></td>
+    </tr>
+</table>
+
+    <script  src="java.js">
+       function Register(){
+            var inputvalue=document.getElementById("tbfname").value;
+            console.log(inputvalue);
+            for(inputvalue;inputvalue<20;inputvalue++){
+                console.log("input value for loops" + inputvalue + "is similar than 20");
+            }
+
+            while(inputvalue<20){
+                console.log("input value for loops" + inputvalue + "is samller than 20");
+                inputvalue++;
+            }
+          do{
+                console.log("input value for loops" + inputvalue + "is smaller than 20");
+                inputvalue++;
+            }
+            while(inputvalue<20)
+
+
+            var middlename=document.getElementById("tbmname").value;
+            document.getElementById("mname").innerHTML=middlename;
+
+            var lastname=document.getElementById("tblname").value;
+            document.getElementById("lname").innerHTML=lastname;
+
+            var phone=document.getElementById("tbphone").value;
+            document.getElementById("phone").innerHTML=phone;
+            
+        }
+    
+    </script>
+</body>
+</html>
